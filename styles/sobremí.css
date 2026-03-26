@@ -1,0 +1,151 @@
+.header {
+  background-color: rgb(251, 207, 214);
+  color: white;
+  padding: 1.5vh; 
+  font-size: 3.5vh;
+  font-weight: 700;
+  font-style: oblique;
+  border-color: rgb(245, 175, 186); 
+  border-style: dotted; 
+  border-bottom-width: 1px;
+}
+
+/*
+.content {
+  padding-right: 100px;
+	}
+*/
+
+.content {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
+  
+}
+
+.content > div {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 243, 248);
+  border-color: rgb(245, 175, 186); 
+  border-style: solid; 
+  border-left-width: 0.5px; 
+  border-right-width: 0.5px;
+}
+
+
+.presentación, 
+.formación,
+.idiomas,
+.skills,
+.hobbies {
+  padding: 1vh 2vh;
+}
+
+/* CSS presentación */
+
+.yo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentación {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72vh;
+}
+
+.saludos {
+  flex: 1; 
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.saludo {
+  text-align: center;
+  position: absolute;
+  color:rgb(251, 140, 182);
+  font-weight: 400;
+  font-family: DM Serif Text;
+  font-style: italic;
+  word-spacing: 2vh;
+  animation: aparecer 10s infinite;
+  font-size: 9vh;
+  opacity: 0;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+ 
+.saludo:nth-child(1) { animation-delay: 0s; }
+.saludo:nth-child(2) { animation-delay: 2.5s; }
+.saludo:nth-child(3) { animation-delay: 5s; }
+.saludo:nth-child(4) { animation-delay: 7.5s; }
+
+@keyframes aparecer {
+  0%  { opacity: 0; }
+  5%  { opacity: 1; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  28% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.contact {
+  font-size: 2vh;
+  color: rgb(130, 99, 111);
+  font-weight: 600;
+  letter-spacing: 0.1vh;
+  text-align: right;
+  line-height: 4vh;
+  margin: 2vh; 
+}
+
+.contactBorder{
+  border-width: 0.2vh;
+  border-style: solid;
+  border-radius: 1vh;
+  border-color: rgba(251, 140, 183, 0.22);
+  background-color: rgba(251, 140, 183, 0.188);
+  padding: 0.5vh;
+
+}
+
+.selfie {
+  width: 40vh; 
+  margin-right: 5vh;
+  filter: drop-shadow(1.5vh 1.5vh 1vh rgba(0, 0, 0, 0.688));
+}
+
+@media (max-width: 600px) {
+  .selfie {
+    width: 30vh; 
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .saludo {
+    font-size: 3.2vh;
+    width: 40vh;
+  }
+
+  .presentación {
+    flex-direction: column;
+  }
+
+  .contact {
+    font-size: 1.6vh;
+  }
+  
+}
+ 
+
+
+

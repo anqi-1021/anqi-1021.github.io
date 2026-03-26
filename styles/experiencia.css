@@ -1,0 +1,98 @@
+/* CSS experiencia laboral */
+
+.prácticas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh; 
+
+}
+
+.encabezado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  vertical-align: top;
+  margin-top: 2vh;
+}
+
+.job {
+  text-align: left;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:left;
+}
+  
+
+.logo-machi {
+  width: 9vh;
+  display: inline-block;
+  padding-right: 2vh;
+ 
+}
+
+.logo-profe {
+  width: 12vh;
+  display: inline-block;
+  border-radius: 40px;
+  mix-blend-mode: multiply;
+}
+
+.logo-trad {
+  width: 12vh;
+  display: inline-block;
+  border-radius: 40px;
+  mix-blend-mode: multiply;
+}
+
+.preview-lab {
+  vertical-align: top;
+  flex: auto;
+  max-width: 90vh;
+}
+
+.title2 {
+  font-weight: 700; 
+  font-size: 3vh;
+  margin-bottom: 1vh;
+}
+
+.descripción2{
+  font-size: 2vh; 
+  font-weight: 500;
+  color: rgb(247, 133, 178);
+  background-color: rgb(249, 219, 231); 
+  border-radius: 6px;
+  margin-bottom: 2vh;
+  padding: 1vh 1vh;
+  margin-top: 2vh; 
+}
+
+.actividad {
+  background-color: rgb(249, 219, 231); 
+  border-radius: 6px;
+  padding: 1vh 1vh;
+  font-size: 2vh; 
+  font-weight: 400;
+  color: rgb(130, 99, 111);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 600px) {
+  .prácticas {
+    flex-direction: column;
+}  
+}

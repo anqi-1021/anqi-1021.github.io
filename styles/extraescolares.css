@@ -1,0 +1,89 @@
+/* CSS actividades */ 
+
+.actividades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: initial;
+  width: auto;
+  height: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.extraescolar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  
+}
+
+.actividadesLogo {
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; /*Centra un div horizontalmente */
+  margin: 1vh 3vh; 
+  background-color: rgb(249, 219, 231); 
+  border-radius: 20px;
+}
+
+.preview-act {
+  height: 98vh;
+  text-align: center; /*Centra un div horizontalmente */
+  margin: 1vh 3vh; 
+  overflow: hidden;
+  background-color: rgb(249, 219, 231);
+  border-radius: 20px;
+  padding: 2vh 2vh;
+}
+
+.logo-startub {
+  width: 22vh; 
+}
+
+.logo-unecub {
+  width: 22vh; 
+  mix-blend-mode: multiply; 
+}
+
+.logo-eit {
+  width: 22vh; 
+
+}
+
+.logo-esade {
+  width: 22vh; 
+  mix-blend-mode: multiply; /* Elimina el fondo blanco */
+}
+
+.logo-cuatrecasas {
+  width: 25vh; 
+  mix-blend-mode: multiply;
+}
+ 
+.descripción-act {
+  font-size: 15px; 
+  font-weight: 500;
+  color: rgb(247, 133, 178);
+}
+
+@media (max-width: 600px) {
+   .actividades {
+    flex-direction: column;
+   }
+
+   .preview-act {
+    height: max-content;
+   }
+
+   .año,
+   .descripción2,
+   .actividad {
+    font-size: 2.5vh;
+   }
+
+
+}

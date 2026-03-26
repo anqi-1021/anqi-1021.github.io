@@ -1,0 +1,80 @@
+/* CSS educación */
+
+.formación {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.UB, 
+.Eirís {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vh; 
+}
+
+.preview {
+  display: inline-block;
+  padding-top: 2vh;
+  min-width: 80vh;
+}
+
+.logo {
+  display: inline-block;
+  align-items: center;
+}
+
+.logoUB,
+.logoEirís {
+  width: 10vh;
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: 700; 
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+.año {
+  font-style: italic;
+  font-size: 2vh; 
+  margin-bottom: 6px;
+  color: rgb(130, 99, 111);
+}
+
+.descripción {
+  font-size: 2.5vh; 
+  font-weight: 500;
+  color: rgb(247, 133, 178);
+  background-color: rgb(249, 219, 231); 
+  border-radius: 6px;
+  margin-bottom: 2vh;
+  padding: 2vh 2vh;
+  margin-top: 2vh; 
+}
+
+.logros {
+  background-color: rgb(249, 219, 231); 
+  border-radius: 6px;
+  margin-bottom: 2vh;
+  font-size: 2.2vh; 
+  font-weight: 400;
+  color: rgb(130, 99, 111);
+  padding: 1vh;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .preview {
+    min-width: 38vh;
+}  
+}
