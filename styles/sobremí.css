@@ -21,11 +21,10 @@
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory; 
-  
+  scroll-behavior: smooth;
 }
 
 .content > div {
-  min-height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -56,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72vh;
+  min-height: 72vh;
 }
 
 .saludos {
@@ -77,10 +76,10 @@
   font-style: italic;
   word-spacing: 2vh;
   animation: aparecer 10s infinite;
-  font-size: 9vh;
+  font-size: 58px;
   opacity: 0;
-  margin-left: 3vh;
-  margin-right: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
  
 .saludo:nth-child(1) { animation-delay: 0s; }
@@ -132,7 +131,7 @@
   }
 
   .saludo {
-    font-size: 3.2vh;
+    font-size: 25px;
     width: 40vh;
   }
 
@@ -145,7 +144,62 @@
   }
   
 }
- 
 
+@media (min-width: 600px) and (max-width: 992px) {
+  .saludo {
+    font-size: 42px;
+    width: 60vh;
+  }
+
+  .saludos {
+    margin: 120px 0 200px 0;
+  }
+
+  .presentación {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .contact {
+    font-size: 1.8vh;
+  }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+ .saludo {
+    width: 680px;
+    margin: 0;
+  }
+
+  .saludos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .presentación {
+    flex-direction: row;
+    padding: 0; 
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .contact {
+    font-size: 2vh;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 2100px) {
+  .saludo {
+    width: 800px;
+    margin-bottom: 50px;
+  }
+
+  .saludos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
 
 

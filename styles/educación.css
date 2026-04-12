@@ -78,3 +78,16 @@
     min-width: 38vh;
 }  
 }
+
+@media (min-width: 600px) and (max-width: 992px) {
+   .preview {
+    min-width: 63vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   .preview {
+    min-width: 68vh;
+  }
+}
+

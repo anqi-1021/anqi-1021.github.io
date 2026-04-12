@@ -117,6 +117,15 @@
   .tab {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
+  }
+
+  .tab button {
+    padding: 2vh;
+  }
+
+  .tablinks {
+    font-size: 2.5vh;
   }
 
   .Work {
@@ -126,7 +135,7 @@
 
   .notes {
     margin-top: 2vh;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
   }
 
   .identificación2 {
@@ -142,5 +151,19 @@
   #ichiban, 
   #starbucks {
     justify-items: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .identificación2 {
+    font-size: 2vh;
+    text-align: left;
+  }
+  }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   .identificación2 {
+    font-size: 2.2vh;
+    text-align: left;
   }
 }

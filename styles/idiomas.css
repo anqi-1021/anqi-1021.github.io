@@ -1,16 +1,20 @@
 /* CSS Idiomas */
 
+.Idiomas {
+  height: max-content;
+}
+
 .idiomas {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: top; 
-  height: auto;
+  justify-content: center;
+  align-items: center; 
+  height: fit-content;
 }
 
 .idiomas-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
 }
 
@@ -95,14 +99,49 @@
   color: rgb(247, 133, 178);
 }
 
-.explicación {
+
+@media (max-width: 600px) {
+  .idiomas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+   .idiomas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .china, .flag, .inglaterra, .galicia {
+    margin-left: 45px;
+    margin-right: 45px;
+   }
+
+   .idiomas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+  }
+
+ @media (min-width: 992px) and (max-width: 1200px) {
+   .idiomas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .china, .flag, .inglaterra, .galicia {
+    margin: 50px 60px;
+   }
+
+}
+
+/* .explicación {
   flex: 1; 
   margin: 2vh 0vh; 
   padding: 1vh;
   height: inherit; 
 }
-
-
 
 .tablinks2 {
   font-size: 2vh;
@@ -135,7 +174,7 @@
   letter-spacing: 0.15vh;
   line-height: 4vh;
   text-align: justify;
-  text-justify: inter-word; /*sin el text-align no funciona*/
+  text-justify: inter-word; /sin el text-align no funciona/
 }
 
 .portal {
@@ -159,7 +198,7 @@
   color:rgb(130, 99, 111);
 }
 
-/* Style the tab */
+/Style the tab/
 .tab {
   overflow: hidden;
   border: 0.3vh solid rgba(245, 175, 185, 0.206);
@@ -170,7 +209,7 @@
   
 }
 
-/* Style the buttons that are used to open the tab content */
+/Style the buttons that are used to open the tab content/
 .tab button {
   background-color: inherit;
   float: left;
@@ -181,22 +220,22 @@
   transition: 0.3s;
   border-top-left-radius: 2vh;
   border-top-right-radius: 2vh;
-  flex-shrink: 0; /*Prevent shrinking*/
+  flex-shrink: 0; /Prevent shrinking/
 
 }
 
-/* Change background color of buttons on hover */
+/Change background color of buttons on hover/
 .tab button:hover {
   background-color: rgba(251, 140, 183, 0.378);
   box-shadow: 0 1vh 2vh 0 rgba(251, 140, 183, 0.858)
 }
 
-/* Create an active/current tablink class */
+/Create an active/current tablink class/
 .tab button.active {
   background-color: rgba(248, 172, 201, 0.109);
 }
 
-/* Style the tab content */
+/Style the tab content/
 .tabcontent2 {
   display: none;
   padding: 1vh 4vh;
@@ -206,10 +245,11 @@
   height: max-content;
 }
 
-/*Full page tabs*/
+/Full page tabs/
 #china {background-color: rgba(248, 172, 201, 0.109);}
 #espanol {background-color: rgba(248, 172, 201, 0.109);}
 #ingles {background-color: rgba(248, 172, 201, 0.109);}
 #frances {background-color: rgba(248, 172, 201, 0.109);}
 #gallego {background-color: rgba(248, 172, 201, 0.109);}
-#catalan {background-color: rgba(248, 172, 201, 0.109);}
+#catalan {background-color: rgba(248, 172, 201, 0.109);} 
+*/
